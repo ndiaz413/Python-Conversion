@@ -1,17 +1,16 @@
-print("This program converts a decimal number to binary or hexadecimal.")
-print(" ")
-# Stores user's decimal number in a variable
-bconNum = int(input("What is the decimal number you wish to convert to binary? "))
-# Converts decimal to binary & removes the "b" in the return
-binaryNum = bin(bconNum)
-binaryNum = binaryNum.replace("b", "")
-# Prints binary result
-print("The binary of " + str(bconNum) + " is: " + str(binaryNum))
+# imports math library, which will be used to convert the decimal number to binary
+import math
+# the user input of what number they want to convert. Converts the input, which is a string, to an int. This will allow it to be used later for a math function
+chosenNumber = int(input("Please enter your Binary. If nothing, put 0 "))
+# converts the decimal number to binary and saves it in the variable binaryVersion
+binaryVersion = bin(chosenNumber) 
+# the bin function adds a random "b" in the binary number. The .replace() removes the b and saves the new value in binaryVersion1
+binaryVersion1 = binaryVersion.replace("b", "")
+# prints the given output, which changing the 
+print("The binary of " + str(int(chosenNumber)) + " is " + str(binaryVersion1))
 
-# Stores user's decimal number in a variable
-hconNum = int(input("What is the decimal number you wish to convert to hexadecimal? "))
-# Converts decimal to hexadecimal & removes the "x" in the return
-hexaNum = hex(hconNum)
+# Converts binary to hexadecimal & removes the "x" in the return
+hexaNum = hex(chosenNumber)
 hexaNum = hexaNum.replace("x", "")
 # Prints hexadecimal result
-print("The hexadecimal of " + str(hconNum) + " is: " + str(hexaNum))
+print("The hexadecimal of " + str(chosenNumber) + " is " + str(hexaNum))
