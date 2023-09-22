@@ -6,11 +6,12 @@ bconNum = int(input("What is the decimal number you wish to convert to binary? "
 binaryNum = bin(bconNum)
 binaryNum = binaryNum.replace("b", "")
 # Prints binary result
-print(str(bconNum) + " in binary is: " + str(binaryNum))
+print("The binary of " + str(bconNum) + " is: " + str(binaryNum))
 
 # Stores user's decimal number in a variable
 hconNum = int(input("What is the decimal number you wish to convert to hexadecimal? "))
-# Converts decimal to hexadecimal
+# Converts decimal to hexadecimal & removes the "x" in the return
 hexaNum = hex(hconNum)
+hexaNum = hexaNum.replace("x", "")
 # Prints hexadecimal result
-print(str(hconNum) + " as a hexadecimal is: " + str(hexaNum))
+print("The hexadecimal of " + str(hconNum) + " is: " + str(hexaNum))
